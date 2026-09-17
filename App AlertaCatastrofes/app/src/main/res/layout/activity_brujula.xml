@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/fondo"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brújula"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto_principal"
+        android:layout_marginBottom="40dp" />
+
+    <FrameLayout
+        android:layout_width="260dp"
+        android:layout_height="260dp">
+
+        <ImageView
+            android:id="@+id/iv_esfera_brujula"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circulo_linterna_apagada"
+            android:contentDescription="Esfera de la brújula" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="N"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <ImageView
+            android:id="@+id/iv_aguja"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/aguja_brujula"
+            android:contentDescription="Aguja de la brújula" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_grados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0°"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/primario"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/tv_direccion_cardinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Norte"
+        android:textSize="16sp"
+        android:textColor="@color/texto_secundario"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

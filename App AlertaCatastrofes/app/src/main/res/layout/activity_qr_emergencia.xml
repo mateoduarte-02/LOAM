@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Código QR de Emergencia"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completá tus datos para generar el código"
+            android:textSize="13sp"
+            android:textColor="@color/texto_secundario"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/et_tipo_sangre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tipo de sangre (ej: O+)"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/et_contacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contacto de emergencia (teléfono)"
+            android:inputType="phone"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/et_alergias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alergias o condiciones (opcional)"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:id="@+id/btn_generar_qr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/fondo_boton_linterna"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Generar Código QR"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_qr"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:contentDescription="Código QR generado" />
+
+    </LinearLayout>
+</ScrollView>

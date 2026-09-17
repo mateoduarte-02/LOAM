@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Mitad roja: apunta al norte -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M50,50 L44,50 L50,10 L56,50 Z" />
+
+    <!-- Mitad gris: apunta al sur -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M50,50 L44,50 L50,90 L56,50 Z" />
+
+    <!-- Centro -->
+    <path
+        android:fillColor="#1A1A2E"
+        android:pathData="M50,50 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+
+</vector>
